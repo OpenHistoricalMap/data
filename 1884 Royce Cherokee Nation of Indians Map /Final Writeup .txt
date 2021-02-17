@@ -1,0 +1,27 @@
+#### Map of the Former Territorial Limits of the Cherokee "Nation of" Indians 1884 ####
+Creator: Cole Briggs (Cbriggsy4@gmail.com)
+Date:7/31/20
+
+### Background ###
+
+During this project I was assigned to find a map of importance from any point in history. I originally thought it would be interesting to center my focus on Native Americans because I knew there had been a number of land trades involved throughout history. Once I stumbled upon this map, describing the land ceded from the Cherokee Nation to the US government, I knew I had struck gold looked forward to unlocking rich data that could be uncovered from this map. 
+
+### Mapmaking Decisions ###
+
+When Georectifying this map I chose to first plot the longitude/latitude intersection points (in decimal format) that were given on the actual map. To add more accuracy I chose to plot forks in rivers and other discerning features. I had an open street map layer that I was rectifying to in order to increase the accuracy of my GCP’s. 
+
+While creating the vector data I chose to use Natural Earth data as well as hydrography data from DIVA-GIS because there were many areas where the territorial limits of the ceded land were outlined by rivers and other waterways. When I wasn’t able to utilize the waterway data for my vector layers I chose to georectify major cities that were displayed on the map and near my territorial limit of interest. This allowed me to account for the possible inaccuracy of the warped map on the QGIS canvas. With this approach I would hand draw the boundary line, attempting to match the same geometry of the original line while also accounting for the warping around my area of focus. 
+
+### License: CC0 ###
+
+All of the data created for this project is covered by a CC0 license, allowing others to use this data without restrictions or any concerns. This project has been created for the purposes of expanding the understanding of Cherokee history through geography. I encourage anyone who is interested in this work to freely use and build off of it. There is plenty of more data within this map that has to be surfaced. 
+
+### Citations / Bibliography ***
+
+Original Map located at - https://www.loc.gov/resource/g3861e.np000155/?r=-0.295,-0.042,1.503,0.704,0
+
+Made with Natural Earth. Free vector and raster map data @ naturalearthdata.com
+
+Diva-GIS - http://www.diva-gis.org/datadown 
+
+OpenStreetMap was used to plot GCP’s for the rectification of the map
